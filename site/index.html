@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body class="welcome-open">
+    <div class="welcome-overlay" id="welcomeOverlay" aria-hidden="false">
+        <div class="welcome-card">
+            <div class="welcome-image"></div>
+            <button type="button" id="startButton" class="welcome-button">estão prontos?</button>
+        </div>
+    </div>
+
+    <div class="site-shell" id="siteShell">
+        <header>
+            <h1>Eu vos apresento as sugestões de presentes</h1>
+        </header>
+        <main>
+            <h1>Sejam bem vindos!</h1>
+            <p>Saibam que são somente sugestões, não precisam se sentir presionados </p>
+
+            <div class="container-centro">
+                <div class="caixa fundo-imagem1">
+                    <h2>Brinquedos</h2>
+                    <p>Gosto de brinquedos RADICAIS, nada de bonecas!!!😝😝</p>
+                    ps: a mamãe não gosta muito disso, mas eu adoro!!!😎😎
+                </div>
+                <div class="caixa fundo-imagem2">
+                    <h2>Roupas</h2>
+                    <p>Tá, esses eu não curto muito, mas a mamãe adora😞😞</p>
+                    ps: mesmo preferindo ficar pelado, caso prefiram dar roupas 2 anos seria o ideal😞
+                </div>
+                <div class="caixa fundo-imagem3">
+                    <h2>Perfumes</h2>
+                    <p>Amo ficar cheirosinho🥰🥰🥰</p>
+                </div>
+                <div class="caixa fundo-imagem4">
+                    <h2>Sapato</h2>
+                    <p>Um que brilha e toca música porfavor🥺🥺</p>
+                    ps: Se for pra deixar a mamãe maluca tem q ser com estilo(o papai com certeza vai gostar)😎😎
+                </div>
+            </div>
+        </main>
+        <footer>
+            <p>Saiba que a sua companhia sera nosso maior presente nesse Show!!🥰🥰 </p>
+        </footer>
+    </div>
+
+    <script>
+        const overlay = document.getElementById('welcomeOverlay');
+        const shell = document.getElementById('siteShell');
+        const button = document.getElementById('startButton');
+
+        button.addEventListener('click', () => {
+            document.body.classList.remove('welcome-open');
+            overlay.classList.add('is-hidden');
+            shell.classList.add('is-visible');
+        });
+    </script>
+</body>
+</html>
